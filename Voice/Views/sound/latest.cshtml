@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "latest";
+}
+
+@Html.ActionLink("Запись голоса", "letters", "record")
+@Html.ActionLink("Создание аудио", "create", "buildSound")
+
+<h2>новые аудио</h2>
+
+
+<a href="/sound/popular">
+    <input type="submit" value="популярные аудио"/>
+</a>
+
+<a href="/sound/liked">
+    <input type="submit" value="понравившиеся аудио" />
+</a>
+
+<a href="/sound/subs">
+    <input type="submit" value="подписки" />
+</a>
+
+<a href="/account/profile">
+    <input type="submit" value="профиль" />
+</a>
+
+<div class="audio-container"></div>
+
+@section scripts
+{
+    <script src="~/Scripts/player.js"></script>
+    <script src="~/Scripts/latest-audio.js"></script>
+}
+
+
+
+
+

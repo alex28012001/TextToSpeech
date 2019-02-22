@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Voice", "Voice\Voice.csproj", "{79E53EB0-73A6-45DB-A067-21051CA4C0F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{B08701B7-3CC0-46CC-AD1A-550DD70F03E6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{FA62A1E8-6C36-46A1-AF7C-1DBB5A48848B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{79E53EB0-73A6-45DB-A067-21051CA4C0F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79E53EB0-73A6-45DB-A067-21051CA4C0F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79E53EB0-73A6-45DB-A067-21051CA4C0F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79E53EB0-73A6-45DB-A067-21051CA4C0F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B08701B7-3CC0-46CC-AD1A-550DD70F03E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B08701B7-3CC0-46CC-AD1A-550DD70F03E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B08701B7-3CC0-46CC-AD1A-550DD70F03E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B08701B7-3CC0-46CC-AD1A-550DD70F03E6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA62A1E8-6C36-46A1-AF7C-1DBB5A48848B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA62A1E8-6C36-46A1-AF7C-1DBB5A48848B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA62A1E8-6C36-46A1-AF7C-1DBB5A48848B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA62A1E8-6C36-46A1-AF7C-1DBB5A48848B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

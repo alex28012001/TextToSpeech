@@ -1,0 +1,18 @@
+﻿@model string
+
+@{
+    ViewBag.Title = "search";
+}
+
+<h2>search</h2>
+<div class="audio-container"></div>
+
+@section scripts
+{
+    <script src="~/Scripts/player.js"></script>
+    <script type="text/javascript">
+        var audioTitle = "@Model";
+    </script>
+    <script src="~/Scripts/search-audio.js"></script>
+}
+

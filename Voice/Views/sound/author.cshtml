@@ -1,0 +1,20 @@
+﻿@model string
+@{
+    ViewBag.Title = "track";
+}
+
+<h2>@Model</h2>
+<div class="follow" name="sub">
+    подписаться
+</div>
+
+<div class="audio-container"></div>
+
+@section scripts
+{
+   <script src="~/Scripts/player.js"></script>
+    <script type="text/javascript">
+        var singerName = "@Model";
+    </script>
+    <script src="~/Scripts/author.js"></script>
+}

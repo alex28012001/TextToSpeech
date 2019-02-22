@@ -1,0 +1,32 @@
+﻿@model Voice.Models.RegistrationModel
+@{
+    ViewBag.Title = "Registration";
+}
+
+<h2>Registration</h2>
+
+@using (Html.BeginForm("Registration", "account"))
+{
+    @Html.LabelFor(p => p.UserName)
+    @Html.TextBoxFor(p => p.UserName)
+    @Html.ValidationMessageFor(p => p.UserName,"", new { @class = "text-danger" })
+    <hr />
+    @Html.LabelFor(p => p.Password)
+    @Html.TextBoxFor(p => p.Password)
+    @Html.ValidationMessageFor(p => p.Password,"",new { @class = "text-danger"  })
+
+    <br />
+    @Html.ValidationSummary(true)
+
+    <input type="submit" value="Submit"/>
+}
+
+
+@section scripts
+{
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+}
+
+
+

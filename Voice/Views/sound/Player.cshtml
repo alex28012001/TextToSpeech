@@ -1,0 +1,67 @@
+﻿@model Voice.Models.DataForPlayer
+@{
+    string likeUnlike = Model.IsLiked ? "like" : "unlike";
+    
+}
+
+<div class="player" audio-path="@Model.Audio.Src" audio-road="" data-currentTime="0">
+
+    <div class="sound-header">
+        <div class="singer-name">
+            <a class="title-text" href="/sound/author/@Model.Audio.UserName">@Model.Audio.UserName</a>
+        </div>
+
+        <span class="title-separator">/</span>
+
+        <div class="audio-title">
+            <a class="title-text" href="/sound/author/@Model.Audio.UserName/@Model.Audio.Title">@Model.Audio.Title</a>
+        </div>
+        <div class="audio-date">
+            <span>@Model.Audio.Date.ToShortDateString() @Model.Audio.Date.ToShortTimeString()</span>
+        </div>
+    </div>
+
+
+
+    <div class="sound-body">
+        <div class="play-btn">
+            <span class="fa fa-play"></span>
+        </div>
+
+        <div class="sound-road">
+            <canvas width="@Model.PlayerProperties.CanvasWidth" height="@Model.PlayerProperties.CanvasHeight" data-work="off"></canvas>
+        </div> 
+    </div>
+
+
+
+
+    <div class="sound-footer">
+        <div class="mark">
+            <div class="@likeUnlike" name="mark">
+                <span class="fa fa-heart"></span>
+            </div>
+
+            <span class="count-likes">
+                @Model.Audio.QuantityLikes
+            </span>
+        </div>
+
+
+        <div class="listening">
+            <span class="listening-text">Прослушано:</span>
+            <span class="listening-count"> @Model.Audio.Listening</span>
+        </div>
+
+        <div class="comments">
+            <span class="fa fa-comment-o" style="font-size:120%"></span>
+            <span class="comments-count">@Model.Audio.QuantityComments</span>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+

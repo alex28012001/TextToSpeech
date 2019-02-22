@@ -1,0 +1,32 @@
+﻿@model string
+@{
+    ViewBag.Title = "create";
+}
+
+<input type="text" placeholder="Введите текст" id="audioText" />
+<span style="display:none" class="text-validate-msg"></span>
+<br />
+<input type="range" min="0" max="1000" step="10" value="100"/>
+<br />
+<input type="submit" id="play" value="Play" />
+
+<audio controls id="audioSrc"></audio>
+<br /><br />
+<input type="text" placeholder="Название записи" id="titleAudio" />
+<input type="submit" value="Сохранить запись " id="saveAudio" />
+<span class="audio-saved"></span>
+
+<br /><br />
+<a id="savedLink" download="1зпись">Скачать</a>
+
+@section scripts
+{
+    <script src="~/Scripts/jquery.validate.js"></script>
+    <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+    <script type="text/javascript">
+        var lang = "rus";
+    </script>
+
+    <script src="~/Scripts/builder-sound.js"></script> 
+}
+
